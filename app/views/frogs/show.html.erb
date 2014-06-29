@@ -1,0 +1,16 @@
+<p>
+  <strong>Name:</strong>
+  <%= @frog.name %>
+</p>
+<p>
+  <strong>Color:
+  </strong>
+  <%= @frog.color %>
+</p>
+<p>
+  <strong>Lives:
+  </strong>
+  <%= @frog.pond.name%>
+</p>
+<%= link_to 'Edit', edit_frog_path(@frog) %>
+<%= link_to 'Back', frogs_path %>

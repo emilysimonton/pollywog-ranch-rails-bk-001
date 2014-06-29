@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%= @pond.name %>
+</p>
+<p>
+  <strong>Water Type:
+  </strong>
+  <%= @pond.water_type %>
+</p>
+<p>
+  <strong>Frogs:</strong>
+  <%@pond.frogs.each do |frog|%>
+    <%=frog.name%>
+  <%end%>
+</p>
+<%= link_to 'Edit', edit_pond_path(@pond) %>
+<%= link_to 'Back', ponds_path %>

@@ -1,0 +1,17 @@
+<p>
+  <strong>Name:</strong>
+  <%= @tadpole.name %>
+</p>
+<p>
+  <strong>Color:
+  </strong>
+  <%= @tadpole.color %>
+</p>
+<p>
+  <strong>Lives:
+  </strong>
+<!--   <#%= @tadpole.frog.pond.name%> -->
+</p>
+<p><%=link_to "Evolve", evolve_path(@tadpole.id), method: :post%></p>
+<%= link_to 'Edit', edit_tadpole_path(@tadpole) %>
+<%= link_to 'Back', tadpole_path %>

@@ -1,0 +1,7 @@
+<h1>Tadpoles</h1>
+<% @frogs.each do |frog| %>
+  <% frog.tadpoles.each do |tadpole|%>
+    <p><%= link_to tadpole.name, tadpole %></p>
+  <% end %>
+  <p><%= link_to "Create a new baby tadpole with parent #{frog.name}", new_frog_tadpole_path(frog) %></p>
+<%end%>

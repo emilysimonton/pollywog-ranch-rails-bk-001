@@ -1,0 +1,8 @@
+<h1>Frogs</h1>
+<% @ponds.each do |pond| %>
+  <% pond.frogs.each do |frog| %>
+    <p><%= link_to frog.name, frog %></p>
+  <% end %>
+  <%= link_to "Create a new frog from #{pond.name}", new_pond_frog_path(pond) %>
+  <hr>
+<% end %>
